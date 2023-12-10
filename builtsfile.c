@@ -80,7 +80,7 @@ void cmd_setenv(char **argms)
  */
 void cmd_unsetenv(char **argsarray)
 {
-	if (args[1])
+	if (argsarray[1])
 	{
 		if (unsetenv(argsarray[1]) == -1)
 			perror("unsetenv");
